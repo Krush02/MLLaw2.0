@@ -1,11 +1,13 @@
 /* CSS Document */
 
-/* --- Color Palette ---
-Primary: #1292B9
-Secondary: #1E5578
-light: #FEFDF9
-Dark: #1B2729 
--------------------- */
+/* --- Color Palette ----------------
+Primary:   #004E98     //  Usafa Blue
+Secondary: #3A6EA5     //  Queen Blue
+Tertiary:  #EE4266     //  Paradise Pink
+light:     #EBEBEB     //  Isabelline
+Light 2:   #C0C0C0     //  Silver
+Dark:      #191923     //  Eerie Black
+---------------------------------- */
 
 body {
 	position: relative;
@@ -25,12 +27,25 @@ h1 {
 	font-size: 3.5em !important;
 }
 
+a, a:visited {
+	color: #3a6ea5;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #EE4266;
+}
+
 section {
-	background-color: #FEFDF9 !important;
+	background-color: #EBEBEB !important;
 }
 
 .opaque {
-	opacity: .8;
+	opacity: .9;
+}
+
+.justify {
+	text-align: justify;
 }
 
 /* --- parallax effect class - Apply this class to a div for parallax effect --- */
@@ -85,14 +100,32 @@ section {
     top: 5px;
 }
 
+/* --- Navbar --- */
+.bg-dark {
+	background-color: #191923 !important;	
+}
+.nav-link {
+	color: #C0C0C0 !important;
+}
+
+.nav-link:hover {
+	color: #EBEBEB !important;
+}
+
 .navbar-brand {
 	width: 50px !important;
 }
 
-nav a {
-	color: #FEFDF9 !important;
+.dropdown-item {
+	color: #C0C0C0 !important;
 }
 
+.dropdown-item:hover {
+	color: #191923 !important;
+	background-color: #EBEBEB !important;
+}
+
+/* --- Banner / Jumbotron --- */
 .banner-main {
 	background-image: url("../images/banner-bg.jpg");
 	background-size: cover;
@@ -110,10 +143,7 @@ nav a {
 	color: #1E5578;
 }
 
-.dropdown-menu {
-	background-color: rgba(30,85,120,0.9) !important;
-}
-
-.dropdown-item:hover {
-	color: #1E5578 !important;
+.seal {
+	height: 100px !important;
+	width: auto;
 }
