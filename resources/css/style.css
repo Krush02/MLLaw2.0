@@ -1,13 +1,13 @@
 /* CSS Document */
 
-/* --- Color Palette ----------------
-Primary:   #004E98     //  Usafa Blue
-Secondary: #3A6EA5     //  Queen Blue
-Tertiary:  #EE4266     //  Paradise Pink
-light:     #EBEBEB     //  Isabelline
-Light 2:   #C0C0C0     //  Silver
-Dark:      #191923     //  Eerie Black
----------------------------------- */
+/* ------------------- Color Palette ----------------------------
+Primary:   #004E98     //  Usafa Blue    //  rgb(0, 78, 152)
+Secondary: #1292B9     //  Dodger Blue   //  rgb(58, 110, 165)
+Tertiary:  #EE4266     //  Paradise Pink //  rgb(238, 66, 102)
+light:     #EBEBEB     //  Isabelline    //  rgb(235, 235, 235)
+Light 2:   #C0C0C0     //  Silver        //  rgb(192, 192, 192)
+Dark:      #191923     //  Eerie Black   //  rgb(25, 25, 35)
+--------------------------------------------------------------- */
 
 body {
 	position: relative;
@@ -28,7 +28,7 @@ h1 {
 }
 
 a, a:visited {
-	color: #3a6ea5;
+	color: #1292b9;
 }
 
 a:hover {
@@ -60,7 +60,7 @@ section {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    background: #1292B9;
+    background: #1292b9;
     opacity: 0.7;
     width: 50px;
     height: 50px;
@@ -104,6 +104,7 @@ section {
 .bg-dark {
 	background-color: #191923 !important;	
 }
+
 .nav-link {
 	color: #C0C0C0 !important;
 }
@@ -114,6 +115,10 @@ section {
 
 .navbar-brand {
 	width: 50px !important;
+}
+
+.dropdown-menu {
+	border: 1px solid #C0C0C0;
 }
 
 .dropdown-item {
@@ -146,4 +151,14 @@ section {
 .seal {
 	height: 100px !important;
 	width: auto;
+}
+
+.card-img-overlay {
+	border: 2px solid #1292b9;
+	border-radius: 2px;
+	background-color: rgba(0,0,0,.65) !important;
+}
+
+.card-title {
+	color: #1292B9 !important;
 }
