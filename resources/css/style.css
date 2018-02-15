@@ -45,11 +45,6 @@ a:hover {
 	color: #EE4266;
 }
 
-a.anchor {
-    padding-top: 50px;
-	margin-top: -50px;
-}
-
 /* --- move elements on hover --- */
 .move-right {
   position: relative;
