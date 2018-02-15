@@ -4,13 +4,12 @@
 Primary:   #004E98     //  Usafa Blue    //  rgb(0, 78, 152)
 Secondary: #1292B9     //  Dodger Blue   //  rgb(58, 110, 165)
 Tertiary:  #EE4266     //  Paradise Pink //  rgb(238, 66, 102)
-light:     #EBEBEB     //  Isabelline    //  rgb(235, 235, 235)
+light:     #FFFFFF     //  Isabelline    //  rgb(235, 235, 235)
 Light 2:   #C0C0C0     //  Silver        //  rgb(192, 192, 192)
 Dark:      #191923     //  Eerie Black   //  rgb(25, 25, 35)
 --------------------------------------------------------------- */
 
 body {
-	position: relative;
 	background-image: url('../images/courthouse.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -27,8 +26,18 @@ h1 {
 	font-size: 3.5em !important;
 }
 
+section {
+	background-color: #FFFFFF !important;
+}
+
+/* --- Link styling --- */
 a, a:visited {
 	color: #1292b9;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
 }
 
 a:hover {
@@ -36,22 +45,34 @@ a:hover {
 	color: #EE4266;
 }
 
-section {
-	background-color: #EBEBEB !important;
+a.anchor {
+    padding-top: 50px;
+	margin-top: -50px;
 }
 
-.opaque {
-	opacity: .9;
+/* --- move elements on hover --- */
+.move-right {
+  position: relative;
+  right: 0; 
 }
 
-.justify {
-	text-align: justify;
+.move-right:hover {
+  right: -10px;
 }
 
 /* --- parallax effect class - Apply this class to a div for parallax effect --- */
 .parallax {
 	background-color: rgba(0,0,0,.6);
 	color: #FDF6F9;
+}
+
+/* --- btn styling --- */
+.btn-primary {
+	background-color: #1292B9 !important;
+}
+
+.btn-primary:hover {
+	background-color: #004E98 !important;
 }
 
 /* --- Return to top button formatting --- */
@@ -68,6 +89,8 @@ section {
     text-decoration: none;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
+	-ms-border-radius: 35px;
+	-o-border-radius: 35px;
     border-radius: 35px;
     -webkit-transition: all 350ms linear;
     -moz-transition: all 350ms ease;
@@ -102,7 +125,7 @@ section {
 
 /* --- Navbar --- */
 .bg-dark {
-	background-color: #191923 !important;	
+	background-color: rgba(25, 25, 35, 0.9) !important;	
 }
 
 .nav-link {
@@ -110,13 +133,14 @@ section {
 }
 
 .nav-link:hover {
-	color: #EBEBEB !important;
+	color: #FFFFFF !important;
 }
 
 .navbar-brand {
 	width: 50px !important;
 }
 
+/* --- dropdown / mobile nav --- */
 .dropdown-menu {
 	border: 1px solid #C0C0C0;
 }
@@ -127,7 +151,7 @@ section {
 
 .dropdown-item:hover {
 	color: #191923 !important;
-	background-color: #EBEBEB !important;
+	background-color: #FFFFFF !important;
 }
 
 /* --- Banner / Jumbotron --- */
@@ -141,15 +165,30 @@ section {
 }
 
 .banner-headline {
-  background-color: #FEFDF9;
+  background-color: rgba(235,235,235,.90);
 }
 
 .banner-headline h1, h5 {
 	color: #1E5578;
 }
 
+/* --- Accordion link styling --- */
+.btn-link {
+	color: #1292B9;
+}
+
+.btn-link:hover, .btn-link:focus {
+	color: #EE4266;
+	text-decoration: none;
+}
+
+.btn-link:enabled {
+	text-decoration: none;
+}
+
+/* --- membership seals / logos --- */
 .seal {
-	height: 100px !important;
+	height: 125px !important;
 	width: auto;
 }
 
@@ -161,4 +200,10 @@ section {
 
 .card-title {
 	color: #1292B9 !important;
+}
+
+/* --- Footer --- */
+.footer {
+	background-color: #191923 !important;
+	color: #EBEBEB;
 }
