@@ -1,0 +1,208 @@
+/* CSS Document */
+
+/* ------------------- Color Palette ----------------------------
+Primary:   #004E98     //  Usafa Blue    //  rgb(0, 78, 152)
+Secondary: #1292B9     //  Dodger Blue   //  rgb(58, 110, 165)
+Tertiary:  #EE4266     //  Paradise Pink //  rgb(238, 66, 102)
+light:     #FFFFFF     //  Isabelline    //  rgb(235, 235, 235)
+Light 2:   #C0C0C0     //  Silver        //  rgb(192, 192, 192)
+Dark:      #191923     //  Eerie Black   //  rgb(25, 25, 35)
+--------------------------------------------------------------- */
+
+body {
+	position: relative;
+	background-image: url('../images/courthouse.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: "open sans";
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: raleway !important;
+}
+
+h1 {
+	font-size: 3.5em !important;
+}
+
+section {
+	background-color: #FFFFFF !important;
+}
+
+/* --- Link styling --- */
+a, a:visited {
+	color: #1292b9;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #EE4266;
+}
+
+/* --- move elements on hover --- */
+.move-right {
+  position: relative;
+  right: 0; 
+}
+
+.move-right:hover {
+  right: -10px;
+}
+
+/* --- parallax effect class - Apply this class to a div for parallax effect --- */
+.parallax {
+	background-color: rgba(0,0,0,.5);
+	color: #FDF6F9;
+}
+
+/* --- btn styling --- */
+.btn-primary {
+	color: #FFF !important;
+	background-color: #1292B9 !important;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #EE4266 !important;
+}
+
+/* --- Return to top button formatting --- */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: #1292b9;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    display: none;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+	-ms-border-radius: 35px;
+	-o-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 350ms linear;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: #1292b9;
+    opacity: 1;
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/* --- Navbar --- */
+.bg-dark {
+	background-color: rgba(25, 25, 35, 0.9) !important;	
+}
+
+.nav-link {
+	color: #C0C0C0 !important;
+}
+
+.nav-link:hover {
+	color: #FFFFFF !important;
+}
+
+.navbar-brand {
+	width: 50px !important;
+}
+
+/* --- dropdown / mobile nav --- */
+.dropdown-menu {
+	border: 1px solid #C0C0C0;
+}
+
+.dropdown-item {
+	color: #C0C0C0 !important;
+}
+
+.dropdown-item:hover {
+	color: #FFFFFF !important;
+	background-color: #1292B9 !important;
+}
+
+/* --- Banner / Jumbotron --- */
+.banner-main {
+	background-image: url("../images/contact-us.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:top;
+	height: 50vh !important;
+	overflow: hidden;
+}
+
+.banner-main h1 {
+	color: #FFFFFF !important;
+}
+
+/* --- practice area cards --- */
+.card-img-overlay {
+	border: 2px solid #1292b9;
+	border-radius: 2px;
+	background-color: rgba(0,0,0,.7) !important;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.card-img-overlay:hover {
+	background-color: rgba(0,0,0,.5) !important;
+}
+
+.card-title {
+	color: #1292B9 !important;
+}
+
+/* --- Accordion link styling --- */
+.btn-link {
+	color: #1292B9;
+}
+
+.btn-link:hover, .btn-link:focus {
+	color: #EE4266;
+	text-decoration: none;
+}
+
+.btn-link:enabled {
+	text-decoration: none;
+}
+
+
+/* --- Footer --- */
+.footer {
+	background-color: rgba(25,25,35,1) !important;
+	color: #EBEBEB;
+}

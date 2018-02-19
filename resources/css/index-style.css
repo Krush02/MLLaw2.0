@@ -10,6 +10,7 @@ Dark:      #191923     //  Eerie Black   //  rgb(25, 25, 35)
 --------------------------------------------------------------- */
 
 body {
+	position: relative;
 	background-image: url('../images/courthouse.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -57,17 +58,19 @@ a:hover {
 
 /* --- parallax effect class - Apply this class to a div for parallax effect --- */
 .parallax {
-	background-color: rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.5);
 	color: #FDF6F9;
 }
 
 /* --- btn styling --- */
 .btn-primary {
+	color: #FFF !important;
 	background-color: #1292B9 !important;
+	border: none;
 }
 
 .btn-primary:hover {
-	background-color: #004E98 !important;
+	background-color: #EE4266 !important;
 }
 
 /* --- Return to top button formatting --- */
@@ -120,7 +123,8 @@ a:hover {
 
 /* --- Navbar --- */
 .bg-dark {
-	background-color: rgba(25, 25, 35, 0.9) !important;	
+	background-color: rgba(25, 25, 35, 1) !important;	
+	color: #FFF !important;
 }
 
 .nav-link {
@@ -145,8 +149,8 @@ a:hover {
 }
 
 .dropdown-item:hover {
-	color: #191923 !important;
-	background-color: #FFFFFF !important;
+	color: #FFFFFF !important;
+	background-color: #1292B9 !important;
 }
 
 /* --- Banner / Jumbotron --- */
@@ -167,6 +171,26 @@ a:hover {
 	color: #1E5578;
 }
 
+/* --- practice area cards --- */
+.card-img-overlay {
+	border: 2px solid #1292b9;
+	border-radius: 2px;
+	background-color: rgba(0,0,0,.7) !important;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.card-img-overlay:hover {
+	background-color: rgba(0,0,0,.5) !important;
+}
+
+.card-title {
+	color: #1292B9 !important;
+}
+
 /* --- Accordion link styling --- */
 .btn-link {
 	color: #1292B9;
@@ -181,24 +205,12 @@ a:hover {
 	text-decoration: none;
 }
 
-/* --- membership seals / logos --- */
-.seal {
-	height: 125px !important;
-	width: auto;
-}
-
-.card-img-overlay {
-	border: 2px solid #1292b9;
-	border-radius: 2px;
-	background-color: rgba(0,0,0,.65) !important;
-}
-
-.card-title {
-	color: #1292B9 !important;
-}
-
-/* --- Footer --- */
-.footer {
-	background-color: #191923 !important;
-	color: #EBEBEB;
+.bg-img {
+	margin: 0;
+	padding: 0;
+	height: 350px;
+	background-image: url("../images/testimonials.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
