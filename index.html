@@ -56,7 +56,7 @@
 <!-- Latest compiled and minified Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <!-- Main Style -->
-<link rel="stylesheet" href="resources/css/index-style.css" type="text/css">
+<link rel="stylesheet" href="resources/css/style.css" type="text/css">
 <!-- Link Google Fonts: Raleway & Open Sans -->	
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Raleway:400,400i,700,700i" rel="stylesheet">
 <!-- Font Awesome CDN -->
@@ -102,11 +102,37 @@
 		  <a class="nav-link" href="contact.html">Contact Us</a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link" href="#payment">Make A Payment</a>
+			<!-- Trigger payment modal -->
+			<a class="btn nav-link" data-toggle="modal" data-target="#paymentModal">
+			  Make A Payment
+			</a>
 		</li>
   	  </ul>
   </div>
 </nav>
+	
+	<!-- Payment Modal Content -->
+			<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Attention</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body text-justify">
+					At Marsicano + Leyva PLLC, we proudly accept Visa, MasterCard, Discover, and American Express through LawPay.
+					 <br>
+					  <img src="./resources/images/lawpay.png">
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<a href="https://secure.lawpay.com/pages/mlesquire/operating" class="btn btn-primary">Proceed to LawPay</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
 
 <!-- HEADER -->
 <header>
@@ -114,7 +140,7 @@
     <div class="container-fluid pt-5">
       <div class="row">
 		<div class="col-xs-12 mx-auto">
-        	<div class="banner-headline text-center p-4 mx-auto">
+        	<div class="banner-headline text-center p-4 mt-5 mx-auto">
          	  <h1>Marsicano + Leyva PLLC</h1>
 				<h5>Your Florida Legal Team</h5>
        		</div>
@@ -137,108 +163,123 @@
       <div class="col-sm-12 text-center mx-auto">
         <p>Marsicano + Leyva PLLC is committed to empowering individuals and business owners by offering a suite of professional legal services at an affordable rate. The attorneys at Marsicano + Leyva PLLC will use their individual experiences and unique insights to provide clients with tailored representation and cutting-edge legal solutions.</p>
 		<br>
-		  <p><a href="contact.html">Contact us</a> today to discuss how our firm can help empower you.</p>
+		  <p><a href="contact.html">Contact us</a> today to discuss how our firm can help empower you.</p>	  
       </div>
     </div>
 	  <hr class="m-0">
-	</div>
+  </div>
+</section>
 	
-	<div class="container pt-5">
+<section class="py-5">	
+	<div class="container">
 	  <div class="row mw-100" id="practice-areas">
 	    <div class="col-lg-12 page-header text-center">
 		  <h2>Practice Areas</h2>
 	    </div>
       </div>
-    <div class="row card-deck py-3">
-      <div class="col-md-4 pb-4">
-	    <div class="card text-white">
-		  <img class="card-img" src="./resources/images/family.jpeg" alt="">
-		  <div class="card-img-overlay text-center">
-			<h5 class="card-title">Family Law</h5>
-			<p class="card-text"><a class="btn btn-default" href="family-law.html">Learn more »</a></p>
-		  </div>
-		</div>
+    <div class="row card-deck justify-content-center py-3">
+      <div class="col-md-3 pb-3">
+	    	<div class="card text-white">
+		  		<img class="card-img" src="./resources/images/family.jpeg" alt="">
+					<div class="card-img-overlay text-center">
+						<h5 class="card-title">Family Law</h5>
+						<p class="card-text"><a class="btn btn-default" href="./practice-areas/family-law.html">Learn more »</a></p>
+					</div>
+				</div>
       </div>
-	  <div class="col-md-4 pb-4">
+	  <div class="col-md-3 pb-3">
 	    <div class="card text-white">
 		  <img class="card-img" src="./resources/images/start-up.jpg" alt="Start-Up written in chalk on a blackboard">
 		  <div class="card-img-overlay text-center">
 			<h5 class="card-title">Business Law</h5>
-			<p class="card-text"><a class="btn btn-default" href="business-law.html">Learn more »</a></p>
+			<p class="card-text"><a class="btn btn-default" href="./practice-areas/business-law.html">Learn more »</a></p>
 		  </div>
 		</div>
       </div>
-      <div class="col-md-4 pb-4">
+      <div class="col-md-3">
 	    <div class="card text-white">
 		  <img class="card-img" src="./resources/images/startup-photos.jpg" alt="Business partners collaborating">
 		  <div class="card-img-overlay text-center">
 			<h5 class="card-title">Employment Law</h5>
-			<p class="card-text"><a class="btn btn-default" href="employment-law.html">Learn more »</a></p>
+			<p class="card-text"><a class="btn btn-default" href="./practice-areas/employment-law.html">Learn more »</a></p>
 		  </div>
 		</div>
       </div>
 	</div>
-	<div class="row card-deck py-3">
-	  <div class="col-md-4 pb-4">
+	<div class="row card-deck justify-content-center pb-3">
+	  <div class="col-md-3 pb-3">
 	    <div class="card text-white">
 		  <img class="card-img" src="./resources/images/contract-signing.jpeg" alt="Signing a document">
 		  <div class="card-img-overlay text-center">
 			<h5 class="card-title">Probate</h5>
-			<p class="card-text"><a class="btn btn-default" href="probate.html">Learn more »</a></p>
+			<p class="card-text"><a class="btn btn-default" href="./practice-areas/probate.html">Learn more »</a></p>
 		  </div>
 		</div>
       </div>
-      <div class="col-md-4 pb-4">
+      <div class="col-md-3 pb-3">
 	    <div class="card text-white">
 		  <img class="card-img" src="./resources/images/meeting.jpg" alt="Attorneys meeting with clients">
 		  <div class="card-img-overlay text-center">
 			<h5 class="card-title">Estate Planning</h5>
-			<p class="card-text"><a class="btn btn-default" href="estate-planning.html">Learn more »</a></p>
+			<p class="card-text"><a class="btn btn-default" href="./practice-areas/estate-planning.html">Learn more »</a></p>
 		  </div>
 		</div>
       </div>
-      <div class="col-md-4 pb-4">
+      <div class="col-md-3">
 	    <div class="card text-white">
 		  <img class="card-img" src="./resources/images/property.jpeg" alt="Modern building">
 		  <div class="card-img-overlay text-center">
 			<h5 class="card-title">Real Estate Law</h5>
-			<p class="card-text"><a class="btn btn-default" href="real-estate.html">Learn more »</a></p>
+			<p class="card-text"><a class="btn btn-default" href="./practice-areas/real-estate.html">Learn more »</a></p>
 		  </div>
 		</div>
       </div>
     </div>
-	<div class="row card-deck py-3">
-      <div class="col-md-4 pb-4">
+	<div class="row card-deck justify-content-center">
+      <div class="col-md-3 pb-3">
 	    <div class="card text-white">
 		  <img class="card-img" src="./resources/images/handshake.jpeg" alt="Extending a handshake">
 		  <div class="card-img-overlay text-center">
 			<h5 class="card-title">Commercial Litigation</h5>
-			<p class="card-text"><a class="btn btn-default" href="commercial-litigation.html">Learn more »</a></p>
+			<p class="card-text"><a class="btn btn-default" href="./practice-areas/commercial-litigation.html">Learn more »</a></p>
 		  </div>
 		</div>
-      </div>
-      <div class="col-md-4 pb-4">
+	  </div>
+	  <div class="col-md-3 pb-3">
 	    <div class="card text-white">
 		  <img class="card-img" src="./resources/images/gavel.jpeg" alt="Gavel">
 		  <div class="card-img-overlay text-center">
 			<h5 class="card-title">Consumer Litigation</h5>
-			<p class="card-text"><a class="btn btn-default" href="consumer-litigation.html">Learn more »</a></p>
+			<p class="card-text"><a class="btn btn-default" href="./practice-areas/consumer-litigation.html">Learn more »</a></p>
 		  </div>
 		</div>
       </div>
-      <div class="col-md-4 pb-4">
+      <div class="col-md-3">
 	    <div class="card text-white">
 		  <img class="card-img" src="./resources/images/law-books.jpeg" alt="Law Books">
 		  <div class="card-img-overlay text-center">
 			<h5 class="card-title">Civil Litigation</h5>
-			<p class="card-text"><a class="btn btn-default" href="civil-litigation.html">Learn more »</a></p>
+			<p class="card-text"><a class="btn btn-default" href="./practice-areas/civil-litigation.html">Learn more »</a></p>
 		  </div>
 		</div>
       </div>
     </div>
-  <hr class="m-0">
   </div>
 </section>
+	
+  <!-- Free Consultation CTA // Parallax Container --> 
+  <div class="parallax mx-auto m-0 py-5">
+    <div class="container py-5">
+      <div class="row mx-auto">
+        <div class="col-xs-12 col-md-8 col-lg-8">
+          <p class="lead">DONT WAIT! CALL US NOW FOR YOUR FREE CONSULTATION!</p>
+        </div>
+        <div class="mx-auto text-center col-xs-offset-4 col-xs-5 col-lg-offset-0"> 
+        	<a class="btn btn-block btn-lg btn-primary" href="contact.html" title="">Free Consultation</a> 
+        </div>
+      </div>
+    </div>
+  </div>
 	
 	<!-- Meet the Team -->
 <section id="team">
@@ -420,22 +461,22 @@
 						<li data-target="#carouselTestimonials" data-slide-to="2"></li>
 					  </ol>
 					  <div class="carousel-inner pb-5" role="listbox">
-						<div class="carousel-item w-75 mx-auto active">
-						  <blockquote class="blockquote">
+						<div class="carousel-item mx-auto active">
+						  <blockquote class="blockquote w-75 mx-auto">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							<footer class="blockquote-footer">- Capt. America</footer>
+							<footer class="blockquote-footer">Capt. America</footer>
 						  </blockquote>
 						</div>
-						<div class="carousel-item w-75 mx-auto">
-						  <blockquote class="blockquote">
+						<div class="carousel-item mx-auto">
+						  <blockquote class="blockquote w-75 mx-auto">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							<footer class="blockquote-footer">- Capt. America</footer>
+							<footer class="blockquote-footer">Capt. America</footer>
 						  </blockquote>
 						</div>
-						<div class="carousel-item w-75 mx-auto">
-						  <blockquote class="blockquote">
+						<div class="carousel-item mx-auto">
+						  <blockquote class="blockquote w-75 mx-auto">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							<footer class="blockquote-footer">- Capt. America</footer>
+							<footer class="blockquote-footer">Capt. America</footer>
 						  </blockquote>
 						</div>
 					  </div>
@@ -507,8 +548,8 @@
           <li>CONTACT US</li>
           <br>
           <li><i class="fa fa-map-marker mr-2"></i> 777 Brickell Ave #500, Miami, FL 33131</li>
-          <li><i class="fa fa-phone mr-2"></i> (305) 721-2917</li>
-          <li><a href="mailto:questions@mlesquire.com"><i class="fa fa-envelope-o mr-2"></i>questions@mlesquire.com</a></li>
+		  <li><i class="fa fa-phone mr-2"></i><a href="tel:3057212917">(305) 721-2917</a></li>
+          <li><i class="fa fa-envelope-o mr-2"></i><a href="mailto:questions@mlesquire.com">questions@mlesquire.com</a></li>
           <li class="pt-2">
               <!-- Facebook -->
               <a class="mr-2" href="https://www.facebook.com/MLesquireLawFirm/" target="_blank">

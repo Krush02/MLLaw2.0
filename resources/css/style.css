@@ -10,7 +10,6 @@ Dark:      #191923     //  Eerie Black   //  rgb(25, 25, 35)
 --------------------------------------------------------------- */
 
 body {
-	position: relative;
 	background-image: url('../images/courthouse.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -46,6 +45,24 @@ a:hover {
 	color: #EE4266;
 }
 
+/* --- Modal - prevent scroll bar from disappearing --- */
+.modal-open {
+  overflow: inherit;
+	padding: 0 !important;
+}
+
+.modal-body {
+	padding: 2em;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.modal-body img {
+	width: 50%;
+	height: auto;
+}
+
 /* --- move elements on hover --- */
 .move-right {
   position: relative;
@@ -67,6 +84,7 @@ a:hover {
 	color: #FFF !important;
 	background-color: #1292B9 !important;
 	border: none;
+	transition: all 300ms ease;
 }
 
 .btn-primary:hover {
@@ -159,11 +177,12 @@ a:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 50vh !important;
+	height: 60vh !important;
 	overflow: hidden;
 }
 
 .banner-headline {
+
   background-color: rgba(235,235,235,.90);
 }
 
@@ -213,4 +232,7 @@ a:hover {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+.carousel-indicators:hover {
+	cursor: pointer;
 }

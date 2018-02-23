@@ -92,5 +92,6 @@ var main = function() {
       }, 300);
   });
 };
+
 //call main function when document is ready
 $(document).ready(main);
