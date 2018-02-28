@@ -91,6 +91,8 @@ var main = function() {
           scrollTop : 0                       // Scroll to top of body
       }, 300);
   });
+	
+
 };
 
 //call main function when document is ready

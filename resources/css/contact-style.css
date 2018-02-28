@@ -6,8 +6,11 @@
 	background-position: center;
 	height: 60vh !important;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.banner-headline {
-	margin-top: 6em;
+.h2-border {
+	border-top: 3px solid #FFF;
 }

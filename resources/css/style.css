@@ -182,7 +182,6 @@ a:hover {
 }
 
 .banner-headline {
-
   background-color: rgba(235,235,235,.90);
 }
 
@@ -191,23 +190,14 @@ a:hover {
 }
 
 /* --- practice area cards --- */
-.card-img-overlay {
-	border: 2px solid #1292b9;
-	border-radius: 2px;
-	background-color: rgba(0,0,0,.7) !important;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
+.card-border {
+	border: 5px solid #EE4266;
+	width: 65%;
+	transition: width 300ms;
 }
 
-.card-img-overlay:hover {
-	background-color: rgba(0,0,0,.5) !important;
-}
-
-.card-title {
-	color: #1292B9 !important;
+.card:hover .card-border {
+	width: 100%;
 }
 
 /* --- Accordion link styling --- */
@@ -227,12 +217,8 @@ a:hover {
 .bg-img {
 	margin: 0;
 	padding: 0;
-	height: 350px;
-	background-image: url("../images/testimonials.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
 }
+
 .carousel-indicators:hover {
 	cursor: pointer;
 }

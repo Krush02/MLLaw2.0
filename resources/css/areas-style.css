@@ -1,14 +1,16 @@
 /* CSS Document */
 /* --- Banner / Jumbotron --- */
-.banner-main {
-	background-image: url("../images/courthouse-steps.jpg");
+.jumbotron-fluid {
+	background-image: url('../images/courthouse-steps.jpg');
+  background-repeat: no-repeat;
 	background-size: cover;
-	background-repeat: no-repeat;
 	background-position: center;
-	height: 60vh !important;
-	overflow: hidden;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.banner-headline {
-	margin-top: 6em;
+.h2-border {
+	border-top: 3px solid #FFF;
 }
