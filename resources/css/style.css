@@ -45,6 +45,11 @@ a:hover {
 	color: #EE4266;
 }
 
+/* --- Underline a heading --- */
+.h-underline {
+	border-top: 3px solid #FFF;
+}
+
 /* --- Modal - prevent scroll bar from disappearing --- */
 .modal-open {
   overflow: inherit;

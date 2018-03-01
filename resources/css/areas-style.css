@@ -11,9 +11,6 @@
 	align-items: center;
 }
 
-.h2-border {
-	border-top: 3px solid #FFF;
-}
 .active-link {
 	padding-left: 10px;
 	color: #EE4266 !important;
