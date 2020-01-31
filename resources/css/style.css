@@ -71,7 +71,7 @@ a:hover {
 /* --- move elements on hover --- */
 .move-right {
   position: relative;
-  right: 0; 
+  right: 0;
 }
 
 .move-right:hover {
@@ -146,7 +146,7 @@ a:hover {
 
 /* --- Navbar --- */
 .bg-dark {
-	background-color: rgba(25, 25, 35, 1) !important;	
+	background-color: rgba(25, 25, 35, 1) !important;
 	color: #FFF !important;
 }
 
@@ -197,6 +197,7 @@ a:hover {
 /* --- practice area cards --- */
 .card-border {
 	border: 5px solid #EE4266;
+	background-color: #EE4266;
 	width: 65%;
 	transition: width 300ms;
 }
